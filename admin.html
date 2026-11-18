@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Cinemas | Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <div class="admin-sidebar-header">
+                <span class="logo-icon">✨</span>
+                <h2>Stellar Admin</h2>
+            </div>
+            <nav class="admin-nav">
+                <a href="admin.html" class="admin-nav-item active">Dashboard</a>
+                <a href="index.html" class="admin-nav-item">View Site</a>
+                <a href="admin-login.html" class="admin-nav-item">Logout</a>
+            </nav>
+        </aside>
+        
+        <main class="admin-main">
+            <div class="admin-header">
+                <h2>Dashboard Overview</h2>
+                <div class="admin-user">
+                    <span>👑 Super Admin</span>
+                </div>
+            </div>
+
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <h3>Total Bookings</h3>
+                    <div class="val" id="total-bookings-val">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Tickets Sold</h3>
+                    <div class="val" id="total-tickets-val">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Revenue</h3>
+                    <div class="val" id="total-revenue-val">₹0</div>
+                </div>
+            </div>
+
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Movie Title</th>
+                            <th>Showtime</th>
+                            <th>Tickets</th>
+                            <th>Total Paid</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-tbody">
+                        <!-- Bookings injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>  
+    </div>
+
+    <script src="script-common.js"></script>
+    <script src="script-admin.js"></script>
+</body>
+</html>

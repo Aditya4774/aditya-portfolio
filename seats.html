@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Cinemas | Select Seats</title>
+    <meta name="description" content="Select your VIP seats for the movie.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✨</span>
+                <h1>Stellar Cinemas</h1>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="my-bookings.html" class="nav-link">Bookings</a>
+                <a href="admin-login.html" class="nav-link">Admin</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+        <div class="selected-movie-header">
+            <h2 id="display-movie-title">Loading Movie...</h2>
+            <p id="display-movie-time" style="color: var(--accent); font-weight: 600; margin-top: 5px;"></p>
+            <p>Base Ticket Price: ₹<span id="display-movie-price">0</span></p>
+        </div>
+
+        <ul class="showcase">
+            <li>
+                <div class="seat standard"></div>
+                <small>Standard</small>
+            </li>
+            <li>
+                <div class="seat premium"></div>
+                <small>Premium (+₹100)</small>
+            </li>
+            <li>
+                <div class="seat vip"></div>
+                <small>VIP (+₹250)</small>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <small>Occupied</small>
+            </li>
+        </ul>
+
+        <div class="theater-container">
+            <div class="screen-glow"></div>
+            <div class="screen"><h2>Please look at this side</h2></div>
+
+            <!-- Standard Rows -->
+            <div class="row">
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+            </div>
+            <div class="row">
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+            </div>
+            <div class="row">
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>              
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+                <div class="seat standard"></div>
+               
+            </div>
+
+            <!-- Premium Rows -->
+            <div class="row" style="margin-top: 15px;">
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+            </div>
+            <div class="row">
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+                <div class="seat premium"></div>
+            </div>
+
+            <!-- VIP Row -->
+            <div class="row" style="margin-top: 25px;">
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+                <div class="seat vip"></div>
+            </div>
+        </div>
+
+        <div class="checkout-panel">
+            <p>
+                You have selected <span id="count" class="highlight">0</span> seats for a total price of ₹<span
+                    id="total" class="highlight">0</span>
+            </p>
+            <button id="proceed-btn" class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script-common.js"></script>
+    <script src="script-seats.js"></script>
+</body>
+
+</html>
